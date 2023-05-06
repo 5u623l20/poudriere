@@ -116,7 +116,6 @@ dist_assets_DATA=	src/share/poudriere/html/assets/poudriere.js \
 			src/share/poudriere/html/assets/logo.svg \
 			src/share/poudriere/html/assets/favicon.ico \
 			src/share/poudriere/html/assets/poudriere.css \
-			src/share/poudriere/html/assets/jquery-1.11.1.js \
 			src/share/poudriere/html/assets/jquery-1.11.1.min.js \
 			src/share/poudriere/html/assets/jquery-1.11.1.min.map \
 			src/share/poudriere/html/assets/jquery.dataTables.rowGrouping-1.2.9.js

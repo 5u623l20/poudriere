@@ -143,7 +143,7 @@ libnv_la_OBJECTS = $(am_libnv_la_OBJECTS)
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
 am__v_lt_0 = --silent
-am__v_lt_1 = 
+am__v_lt_1 =
 libnv_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(libnv_la_CFLAGS) \
 	$(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
@@ -333,11 +333,11 @@ am__v_P_1 = :
 AM_V_GEN = $(am__v_GEN_@AM_V@)
 am__v_GEN_ = $(am__v_GEN_@AM_DEFAULT_V@)
 am__v_GEN_0 = @echo "  GEN     " $@;
-am__v_GEN_1 = 
+am__v_GEN_1 =
 AM_V_at = $(am__v_at_@AM_V@)
 am__v_at_ = $(am__v_at_@AM_DEFAULT_V@)
 am__v_at_0 = @
-am__v_at_1 = 
+am__v_at_1 =
 DEFAULT_INCLUDES = -I.@am__isrc@ -I$(top_builddir)/src
 depcomp = $(SHELL) $(top_srcdir)/build-aux/depcomp
 am__maybe_remake_depfiles = depfiles
@@ -437,7 +437,7 @@ LTCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 AM_V_CC = $(am__v_CC_@AM_V@)
 am__v_CC_ = $(am__v_CC_@AM_DEFAULT_V@)
 am__v_CC_0 = @echo "  CC      " $@;
-am__v_CC_1 = 
+am__v_CC_1 =
 CCLD = $(CC)
 LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
@@ -445,7 +445,7 @@ LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 AM_V_CCLD = $(am__v_CCLD_@AM_V@)
 am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
 am__v_CCLD_0 = @echo "  CCLD    " $@;
-am__v_CCLD_1 = 
+am__v_CCLD_1 =
 SOURCES = $(libnv_la_SOURCES) $(libptsort_la_SOURCES) \
 	$(libucl_la_SOURCES) $(cachec_SOURCES) $(cached_SOURCES) \
 	$(clock_SOURCES) $(cpdup_SOURCES) $(dirempty_SOURCES) \
@@ -803,7 +803,6 @@ dist_assets_DATA = src/share/poudriere/html/assets/poudriere.js \
 			src/share/poudriere/html/assets/logo.svg \
 			src/share/poudriere/html/assets/favicon.ico \
 			src/share/poudriere/html/assets/poudriere.css \
-			src/share/poudriere/html/assets/jquery-1.11.1.js \
 			src/share/poudriere/html/assets/jquery-1.11.1.min.js \
 			src/share/poudriere/html/assets/jquery-1.11.1.min.map \
 			src/share/poudriere/html/assets/jquery.dataTables.rowGrouping-1.2.9.js
@@ -1037,7 +1036,7 @@ src/config.h: src/stamp-h1
 src/stamp-h1: $(top_srcdir)/src/config.h.in $(top_builddir)/config.status
 	@rm -f src/stamp-h1
 	cd $(top_builddir) && $(SHELL) ./config.status src/config.h
-$(top_srcdir)/src/config.h.in: @MAINTAINER_MODE_TRUE@ $(am__configure_deps) 
+$(top_srcdir)/src/config.h.in: @MAINTAINER_MODE_TRUE@ $(am__configure_deps)
 	($(am__cd) $(top_srcdir) && $(AUTOHEADER))
 	rm -f src/stamp-h1
 	touch $@
@@ -1130,7 +1129,7 @@ external/libnv/sys/libnv_la-nvpair.lo:  \
 	external/libnv/sys/$(am__dirstamp) \
 	external/libnv/sys/$(DEPDIR)/$(am__dirstamp)
 
-libnv.la: $(libnv_la_OBJECTS) $(libnv_la_DEPENDENCIES) $(EXTRA_libnv_la_DEPENDENCIES) 
+libnv.la: $(libnv_la_OBJECTS) $(libnv_la_DEPENDENCIES) $(EXTRA_libnv_la_DEPENDENCIES)
 	$(AM_V_CCLD)$(libnv_la_LINK)  $(libnv_la_OBJECTS) $(libnv_la_LIBADD) $(LIBS)
 external/ptsort/lib/$(am__dirstamp):
 	@$(MKDIR_P) external/ptsort/lib
@@ -1145,7 +1144,7 @@ external/ptsort/lib/libptsort_la-fline.lo:  \
 	external/ptsort/lib/$(am__dirstamp) \
 	external/ptsort/lib/$(DEPDIR)/$(am__dirstamp)
 
-libptsort.la: $(libptsort_la_OBJECTS) $(libptsort_la_DEPENDENCIES) $(EXTRA_libptsort_la_DEPENDENCIES) 
+libptsort.la: $(libptsort_la_OBJECTS) $(libptsort_la_DEPENDENCIES) $(EXTRA_libptsort_la_DEPENDENCIES)
 	$(AM_V_CCLD)$(LINK)  $(libptsort_la_OBJECTS) $(libptsort_la_LIBADD) $(LIBS)
 external/libucl/src/$(am__dirstamp):
 	@$(MKDIR_P) external/libucl/src
@@ -1175,7 +1174,7 @@ external/libucl/src/libucl_la-xxhash.lo:  \
 	external/libucl/src/$(am__dirstamp) \
 	external/libucl/src/$(DEPDIR)/$(am__dirstamp)
 
-libucl.la: $(libucl_la_OBJECTS) $(libucl_la_DEPENDENCIES) $(EXTRA_libucl_la_DEPENDENCIES) 
+libucl.la: $(libucl_la_OBJECTS) $(libucl_la_DEPENDENCIES) $(EXTRA_libucl_la_DEPENDENCIES)
 	$(AM_V_CCLD)$(libucl_la_LINK)  $(libucl_la_OBJECTS) $(libucl_la_LIBADD) $(LIBS)
 src/libexec/poudriere/cachec/$(am__dirstamp):
 	@$(MKDIR_P) src/libexec/poudriere/cachec
@@ -1187,7 +1186,7 @@ src/libexec/poudriere/cachec/cachec.$(OBJEXT):  \
 	src/libexec/poudriere/cachec/$(am__dirstamp) \
 	src/libexec/poudriere/cachec/$(DEPDIR)/$(am__dirstamp)
 
-cachec$(EXEEXT): $(cachec_OBJECTS) $(cachec_DEPENDENCIES) $(EXTRA_cachec_DEPENDENCIES) 
+cachec$(EXEEXT): $(cachec_OBJECTS) $(cachec_DEPENDENCIES) $(EXTRA_cachec_DEPENDENCIES)
 	@rm -f cachec$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(cachec_OBJECTS) $(cachec_LDADD) $(LIBS)
 src/libexec/poudriere/cached/$(am__dirstamp):
@@ -1200,7 +1199,7 @@ src/libexec/poudriere/cached/cached-cached.$(OBJEXT):  \
 	src/libexec/poudriere/cached/$(am__dirstamp) \
 	src/libexec/poudriere/cached/$(DEPDIR)/$(am__dirstamp)
 
-cached$(EXEEXT): $(cached_OBJECTS) $(cached_DEPENDENCIES) $(EXTRA_cached_DEPENDENCIES) 
+cached$(EXEEXT): $(cached_OBJECTS) $(cached_DEPENDENCIES) $(EXTRA_cached_DEPENDENCIES)
 	@rm -f cached$(EXEEXT)
 	$(AM_V_CCLD)$(cached_LINK) $(cached_OBJECTS) $(cached_LDADD) $(LIBS)
 src/libexec/poudriere/clock/$(am__dirstamp):
@@ -1213,7 +1212,7 @@ src/libexec/poudriere/clock/clock.$(OBJEXT):  \
 	src/libexec/poudriere/clock/$(am__dirstamp) \
 	src/libexec/poudriere/clock/$(DEPDIR)/$(am__dirstamp)
 
-clock$(EXEEXT): $(clock_OBJECTS) $(clock_DEPENDENCIES) $(EXTRA_clock_DEPENDENCIES) 
+clock$(EXEEXT): $(clock_OBJECTS) $(clock_DEPENDENCIES) $(EXTRA_clock_DEPENDENCIES)
 	@rm -f clock$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(clock_OBJECTS) $(clock_LDADD) $(LIBS)
 src/libexec/poudriere/cpdup/src/$(am__dirstamp):
@@ -1238,7 +1237,7 @@ src/libexec/poudriere/cpdup/src/cpdup-misc.$(OBJEXT):  \
 	src/libexec/poudriere/cpdup/src/$(am__dirstamp) \
 	src/libexec/poudriere/cpdup/src/$(DEPDIR)/$(am__dirstamp)
 
-cpdup$(EXEEXT): $(cpdup_OBJECTS) $(cpdup_DEPENDENCIES) $(EXTRA_cpdup_DEPENDENCIES) 
+cpdup$(EXEEXT): $(cpdup_OBJECTS) $(cpdup_DEPENDENCIES) $(EXTRA_cpdup_DEPENDENCIES)
 	@rm -f cpdup$(EXEEXT)
 	$(AM_V_CCLD)$(cpdup_LINK) $(cpdup_OBJECTS) $(cpdup_LDADD) $(LIBS)
 src/libexec/poudriere/dirempty/$(am__dirstamp):
@@ -1251,7 +1250,7 @@ src/libexec/poudriere/dirempty/dirempty.$(OBJEXT):  \
 	src/libexec/poudriere/dirempty/$(am__dirstamp) \
 	src/libexec/poudriere/dirempty/$(DEPDIR)/$(am__dirstamp)
 
-dirempty$(EXEEXT): $(dirempty_OBJECTS) $(dirempty_DEPENDENCIES) $(EXTRA_dirempty_DEPENDENCIES) 
+dirempty$(EXEEXT): $(dirempty_OBJECTS) $(dirempty_DEPENDENCIES) $(EXTRA_dirempty_DEPENDENCIES)
 	@rm -f dirempty$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(dirempty_OBJECTS) $(dirempty_LDADD) $(LIBS)
 src/libexec/poudriere/dirwatch/$(am__dirstamp):
@@ -1264,7 +1263,7 @@ src/libexec/poudriere/dirwatch/dirwatch.$(OBJEXT):  \
 	src/libexec/poudriere/dirwatch/$(am__dirstamp) \
 	src/libexec/poudriere/dirwatch/$(DEPDIR)/$(am__dirstamp)
 
-dirwatch$(EXEEXT): $(dirwatch_OBJECTS) $(dirwatch_DEPENDENCIES) $(EXTRA_dirwatch_DEPENDENCIES) 
+dirwatch$(EXEEXT): $(dirwatch_OBJECTS) $(dirwatch_DEPENDENCIES) $(EXTRA_dirwatch_DEPENDENCIES)
 	@rm -f dirwatch$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(dirwatch_OBJECTS) $(dirwatch_LDADD) $(LIBS)
 src/libexec/poudriere/jexecd/$(am__dirstamp):
@@ -1277,7 +1276,7 @@ src/libexec/poudriere/jexecd/jexecd-jexecd.$(OBJEXT):  \
 	src/libexec/poudriere/jexecd/$(am__dirstamp) \
 	src/libexec/poudriere/jexecd/$(DEPDIR)/$(am__dirstamp)
 
-jexecd$(EXEEXT): $(jexecd_OBJECTS) $(jexecd_DEPENDENCIES) $(EXTRA_jexecd_DEPENDENCIES) 
+jexecd$(EXEEXT): $(jexecd_OBJECTS) $(jexecd_DEPENDENCIES) $(EXTRA_jexecd_DEPENDENCIES)
 	@rm -f jexecd$(EXEEXT)
 	$(AM_V_CCLD)$(jexecd_LINK) $(jexecd_OBJECTS) $(jexecd_LDADD) $(LIBS)
 src/libexec/poudriere/locked_mkdir/$(am__dirstamp):
@@ -1290,7 +1289,7 @@ src/libexec/poudriere/locked_mkdir/locked_mkdir.$(OBJEXT):  \
 	src/libexec/poudriere/locked_mkdir/$(am__dirstamp) \
 	src/libexec/poudriere/locked_mkdir/$(DEPDIR)/$(am__dirstamp)
 
-locked_mkdir$(EXEEXT): $(locked_mkdir_OBJECTS) $(locked_mkdir_DEPENDENCIES) $(EXTRA_locked_mkdir_DEPENDENCIES) 
+locked_mkdir$(EXEEXT): $(locked_mkdir_OBJECTS) $(locked_mkdir_DEPENDENCIES) $(EXTRA_locked_mkdir_DEPENDENCIES)
 	@rm -f locked_mkdir$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(locked_mkdir_OBJECTS) $(locked_mkdir_LDADD) $(LIBS)
 src/libexec/poudriere/nc/$(am__dirstamp):
@@ -1303,7 +1302,7 @@ src/libexec/poudriere/nc/nc.$(OBJEXT):  \
 	src/libexec/poudriere/nc/$(am__dirstamp) \
 	src/libexec/poudriere/nc/$(DEPDIR)/$(am__dirstamp)
 
-nc$(EXEEXT): $(nc_OBJECTS) $(nc_DEPENDENCIES) $(EXTRA_nc_DEPENDENCIES) 
+nc$(EXEEXT): $(nc_OBJECTS) $(nc_DEPENDENCIES) $(EXTRA_nc_DEPENDENCIES)
 	@rm -f nc$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(nc_OBJECTS) $(nc_LDADD) $(LIBS)
 src/poudriered/$(am__dirstamp):
@@ -1316,7 +1315,7 @@ src/poudriered/poudriered-poudriered.$(OBJEXT):  \
 	src/poudriered/$(am__dirstamp) \
 	src/poudriered/$(DEPDIR)/$(am__dirstamp)
 
-poudriered$(EXEEXT): $(poudriered_OBJECTS) $(poudriered_DEPENDENCIES) $(EXTRA_poudriered_DEPENDENCIES) 
+poudriered$(EXEEXT): $(poudriered_OBJECTS) $(poudriered_DEPENDENCIES) $(EXTRA_poudriered_DEPENDENCIES)
 	@rm -f poudriered$(EXEEXT)
 	$(AM_V_CCLD)$(poudriered_LINK) $(poudriered_OBJECTS) $(poudriered_LDADD) $(LIBS)
 external/ptsort/bin/$(am__dirstamp):
@@ -1329,7 +1328,7 @@ external/ptsort/bin/ptsort-ptsort.$(OBJEXT):  \
 	external/ptsort/bin/$(am__dirstamp) \
 	external/ptsort/bin/$(DEPDIR)/$(am__dirstamp)
 
-ptsort$(EXEEXT): $(ptsort_OBJECTS) $(ptsort_DEPENDENCIES) $(EXTRA_ptsort_DEPENDENCIES) 
+ptsort$(EXEEXT): $(ptsort_OBJECTS) $(ptsort_DEPENDENCIES) $(EXTRA_ptsort_DEPENDENCIES)
 	@rm -f ptsort$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(ptsort_OBJECTS) $(ptsort_LDADD) $(LIBS)
 src/libexec/poudriere/pwait/$(am__dirstamp):
@@ -1342,7 +1341,7 @@ src/libexec/poudriere/pwait/pwait.$(OBJEXT):  \
 	src/libexec/poudriere/pwait/$(am__dirstamp) \
 	src/libexec/poudriere/pwait/$(DEPDIR)/$(am__dirstamp)
 
-pwait$(EXEEXT): $(pwait_OBJECTS) $(pwait_DEPENDENCIES) $(EXTRA_pwait_DEPENDENCIES) 
+pwait$(EXEEXT): $(pwait_OBJECTS) $(pwait_DEPENDENCIES) $(EXTRA_pwait_DEPENDENCIES)
 	@rm -f pwait$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(pwait_OBJECTS) $(pwait_LDADD) $(LIBS)
 src/libexec/poudriere/rename/$(am__dirstamp):
@@ -1355,7 +1354,7 @@ src/libexec/poudriere/rename/rename.$(OBJEXT):  \
 	src/libexec/poudriere/rename/$(am__dirstamp) \
 	src/libexec/poudriere/rename/$(DEPDIR)/$(am__dirstamp)
 
-rename$(EXEEXT): $(rename_OBJECTS) $(rename_DEPENDENCIES) $(EXTRA_rename_DEPENDENCIES) 
+rename$(EXEEXT): $(rename_OBJECTS) $(rename_DEPENDENCIES) $(EXTRA_rename_DEPENDENCIES)
 	@rm -f rename$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(rename_OBJECTS) $(rename_LDADD) $(LIBS)
 src/libexec/poudriere/rexec/$(am__dirstamp):
@@ -1368,7 +1367,7 @@ src/libexec/poudriere/rexec/rexec-rexec.$(OBJEXT):  \
 	src/libexec/poudriere/rexec/$(am__dirstamp) \
 	src/libexec/poudriere/rexec/$(DEPDIR)/$(am__dirstamp)
 
-rexec$(EXEEXT): $(rexec_OBJECTS) $(rexec_DEPENDENCIES) $(EXTRA_rexec_DEPENDENCIES) 
+rexec$(EXEEXT): $(rexec_OBJECTS) $(rexec_DEPENDENCIES) $(EXTRA_rexec_DEPENDENCIES)
 	@rm -f rexec$(EXEEXT)
 	$(AM_V_CCLD)$(rexec_LINK) $(rexec_OBJECTS) $(rexec_LDADD) $(LIBS)
 src/libexec/poudriere/rm/$(am__dirstamp):
@@ -1381,7 +1380,7 @@ src/libexec/poudriere/rm/rm.$(OBJEXT):  \
 	src/libexec/poudriere/rm/$(am__dirstamp) \
 	src/libexec/poudriere/rm/$(DEPDIR)/$(am__dirstamp)
 
-rm$(EXEEXT): $(rm_OBJECTS) $(rm_DEPENDENCIES) $(EXTRA_rm_DEPENDENCIES) 
+rm$(EXEEXT): $(rm_OBJECTS) $(rm_DEPENDENCIES) $(EXTRA_rm_DEPENDENCIES)
 	@rm -f rm$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(rm_OBJECTS) $(rm_LDADD) $(LIBS)
 src/libexec/poudriere/setsid/$(am__dirstamp):
@@ -1394,7 +1393,7 @@ src/libexec/poudriere/setsid/setsid-setsid.$(OBJEXT):  \
 	src/libexec/poudriere/setsid/$(am__dirstamp) \
 	src/libexec/poudriere/setsid/$(DEPDIR)/$(am__dirstamp)
 
-setsid$(EXEEXT): $(setsid_OBJECTS) $(setsid_DEPENDENCIES) $(EXTRA_setsid_DEPENDENCIES) 
+setsid$(EXEEXT): $(setsid_OBJECTS) $(setsid_DEPENDENCIES) $(EXTRA_setsid_DEPENDENCIES)
 	@rm -f setsid$(EXEEXT)
 	$(AM_V_CCLD)$(setsid_LINK) $(setsid_OBJECTS) $(setsid_LDADD) $(LIBS)
 external/sh/$(am__dirstamp):
@@ -1541,7 +1540,7 @@ src/poudriere-sh/sh-builtins.$(OBJEXT):  \
 	src/poudriere-sh/$(am__dirstamp) \
 	src/poudriere-sh/$(DEPDIR)/$(am__dirstamp)
 
-sh$(EXEEXT): $(sh_OBJECTS) $(sh_DEPENDENCIES) $(EXTRA_sh_DEPENDENCIES) 
+sh$(EXEEXT): $(sh_OBJECTS) $(sh_DEPENDENCIES) $(EXTRA_sh_DEPENDENCIES)
 	@rm -f sh$(EXEEXT)
 	$(AM_V_CCLD)$(sh_LINK) $(sh_OBJECTS) $(sh_LDADD) $(LIBS)
 src/libexec/poudriere/timeout/$(am__dirstamp):
@@ -1554,7 +1553,7 @@ src/libexec/poudriere/timeout/timeout.$(OBJEXT):  \
 	src/libexec/poudriere/timeout/$(am__dirstamp) \
 	src/libexec/poudriere/timeout/$(DEPDIR)/$(am__dirstamp)
 
-timeout$(EXEEXT): $(timeout_OBJECTS) $(timeout_DEPENDENCIES) $(EXTRA_timeout_DEPENDENCIES) 
+timeout$(EXEEXT): $(timeout_OBJECTS) $(timeout_DEPENDENCIES) $(EXTRA_timeout_DEPENDENCIES)
 	@rm -f timeout$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(timeout_OBJECTS) $(timeout_LDADD) $(LIBS)
 src/libexec/poudriere/timestamp/$(am__dirstamp):
@@ -1567,7 +1566,7 @@ src/libexec/poudriere/timestamp/timestamp.$(OBJEXT):  \
 	src/libexec/poudriere/timestamp/$(am__dirstamp) \
 	src/libexec/poudriere/timestamp/$(DEPDIR)/$(am__dirstamp)
 
-timestamp$(EXEEXT): $(timestamp_OBJECTS) $(timestamp_DEPENDENCIES) $(EXTRA_timestamp_DEPENDENCIES) 
+timestamp$(EXEEXT): $(timestamp_OBJECTS) $(timestamp_DEPENDENCIES) $(EXTRA_timestamp_DEPENDENCIES)
 	@rm -f timestamp$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(timestamp_OBJECTS) $(timestamp_LDADD) $(LIBS)
 install-dist_binSCRIPTS: $(dist_bin_SCRIPTS)
